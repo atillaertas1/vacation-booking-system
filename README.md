@@ -10,8 +10,7 @@ Bu proje, **Veritabanı Yönetim Sistemleri** dersi kapsamında geliştirilen bi
 - [Kurulum](#kurulum)
 - [API Endpointleri](#api-endpointleri)
 - [Veritabanı Tasarımı](#veritabanı-tasarımı)
-- [Veritabanı Yönetim Sistemleri Dersi Amaçları](#veritabanı-yonetim-sistemleri-dersi-amaçları)
-- [Katkıda Bulunma](#katkıda-bulunma)
+
 
 ## Özellikler
 

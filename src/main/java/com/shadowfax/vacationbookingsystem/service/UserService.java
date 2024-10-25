@@ -74,4 +74,8 @@ public class UserService {
 
         return "Not success";
     }
+
+    public User getUserByUsername(String name) {
+        return userRepository.findByUsername(name);
+    }
 }

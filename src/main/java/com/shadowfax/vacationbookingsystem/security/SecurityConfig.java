@@ -35,6 +35,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(request -> request
                         .requestMatchers("api/users/register", "api/users/login")
                         .permitAll()
+                        .requestMatchers("api/spots/**")
+                        .permitAll()
                         .anyRequest().authenticated())
                 .httpBasic(Customizer.withDefaults())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))

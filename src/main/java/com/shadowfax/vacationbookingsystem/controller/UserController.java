@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
 import java.util.List;
 
 @RestController
@@ -54,8 +55,9 @@ public class UserController {
         return ResponseEntity.notFound().build();
     }
 
-
-
-
-
+    @GetMapping("/current-user")
+    public ResponseEntity<User> getCurrentUser(Principal principal) {
+        User user = userService.getUserByUsername(principal.getName());
+        return ResponseEntity.ok(user);
+    }
 }
